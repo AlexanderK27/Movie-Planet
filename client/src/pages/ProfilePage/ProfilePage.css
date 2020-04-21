@@ -1,0 +1,109 @@
+.profile-page {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #0f0f0f;
+}
+.profile-page .tickets-list {
+    margin: 20px 40px 40px;
+    width: 55%;
+}
+.profile-page .sidebar {
+    min-width: 240px;
+    height: fit-content;
+    margin: 0 10%;
+    padding: 16px;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+}
+.profile-page .sidebar .user-data {
+    padding: 10px 30px;
+}
+.profile-page .sidebar .user-data h4 {
+    text-transform: uppercase;
+}
+
+.qrcode-background {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 3000;
+}
+.qrcode-background>div span {
+    display: block;
+    width: 100%;
+    text-align: right;
+    font-size: 32px;
+    font-weight: bold;
+    color: #ccc;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1300px) {
+    .profile-page .tickets-list {
+        width: 100%;
+        max-width: 700px;
+    }
+    .profile-page .sidebar {
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .profile-page .tickets-list {
+        width: 100%;
+        max-width: 700px;
+    }
+    .profile-page .sidebar {
+        margin: 0;
+        margin-right: 20px;
+        padding: 10px 16px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .profile-page {
+        flex-wrap: wrap;
+    }
+    .profile-page .no-tickets {
+        order: 2;
+    }
+    .profile-page .tickets-list {
+        order: 2;
+        width: 90%;
+        margin: auto;
+    }
+    .profile-page .sidebar {
+        order: 1;
+        width: 40%;
+        margin: 0 auto 30px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .profile-page .sidebar {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 550px) {
+    .profile-page .tickets-list {
+        width: 96%;
+    }
+    .profile-page .sidebar {
+        width: 70%;
+    }
+}
+@media screen and (max-width: 450px) {
+    .profile-page .tickets-list {
+        width: 100%;
+    }
+    .profile-page .sidebar {
+        width: 100%;
+        margin-top: -10px;
+        box-shadow: 2px 2px 5px 2px #1f1f1f;
+    }
+}

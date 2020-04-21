@@ -1,0 +1,41 @@
+.soon-page {
+	min-height: calc(100vh - 173px);
+	margin: 0;
+	padding-top: 12px;
+	font-family: sans-serif;
+	background-color: #E3E3E3;
+}
+.soon-page>p {
+	margin: auto;
+	padding-top: 100px;
+	text-align: center;
+	font-size: 1.1em;
+}
+
+.card-block {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 2%;
+}
+
+.date {
+	box-sizing: border-box;
+	width: 96%;
+	margin: 12px 2% 15px;
+	padding: 15px 20px;
+	border-radius: 8px;
+	color: white;
+	font-size: 1.2em;
+	font-weight: bold;
+	box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.3);
+	background: #404040;
+	background: -moz-linear-gradient(top, #404040 0%, #383838 50%, #404040 100%);
+	background: -webkit-linear-gradient(top, #404040 0%, #383838 50%, #404040 100%);
+	background: linear-gradient(to bottom, #404040 0%, #383838 50%, #404040 100%);
+}
+
+@media screen and (max-width: 550px) {
+	.card-block {
+		justify-content: center;
+    }
+}

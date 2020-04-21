@@ -1,0 +1,68 @@
+.no-tickets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40vh;
+    color: #fff;
+}
+.no-tickets p {
+    font-size: 1.1em;
+}
+.no-tickets a {
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    color: #FF6D12
+}
+.no-tickets a:hover {
+    text-decoration: underline;
+}
+.order {
+    margin: 16px;
+    padding: 16px;
+    background-color: #1f1f1f;
+    box-shadow: 2px 2px 5px 2px #000;
+}
+.order .order-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 7px;
+}
+.order .order-menu p {
+    margin: 10px;
+    font-size: 20px;
+    color: #fff;
+}
+.order .order-menu .buttons button {
+    margin: 4px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 0 -7px 4px #000;
+    outline: none;
+    cursor: pointer;
+}
+.order .order-menu .buttons button:first-of-type {
+    background-color: #b10606;
+    border: 2px solid #b10606;
+}
+.order .order-menu .buttons button:last-of-type {
+    color: #b10606;
+    background-color: #fff;
+    border: 2px solid #b10606;
+}
+
+@media screen and (max-width: 560px) {
+    .order .order-menu {
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 450px) {
+    .order {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,44 @@
+.circle-out {
+    width: 27em;
+    height: 27em;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0 0 8px 3px white;
+}
+.circle-in {
+    position: relative;
+    top: 2em;
+    left: 1.85em;
+    width: 23.25em;
+    height: 23em;
+    border-radius: 50%;
+    background-color: black;
+}
+.triangle, .triangle::before, .triangle::after {
+    height: 0.5em;
+    background-color: white;
+    border-radius: 10em;
+    box-shadow: 0 0 0 1.2em white;
+}
+.triangle { 
+    width: 9em;
+    position: relative;
+    transform: rotate(90deg);
+    top: 11em;
+    left: 3.3em;
+}
+.triangle::before, .triangle::after {
+    width: 11em;
+    content: '';
+    position: absolute;
+    top: -5em;
+}
+.triangle::before {
+    left: -3.4em;
+    transform: rotate(-66deg);
+}
+.triangle::after {
+    right: -3.25em;
+    transform: rotate(66deg);
+}

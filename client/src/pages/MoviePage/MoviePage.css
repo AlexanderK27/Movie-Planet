@@ -1,0 +1,98 @@
+.movie-page {
+    background: #0F0F0F;
+    min-height: 100vh;
+}
+
+#player {
+    width: 100%;
+    height: 50vh;
+}
+
+#play-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 54px;
+    width: 100%;
+    height: 50vh;
+    font-size: 20%;
+    background-color: black;
+    box-shadow: 2px 12px 12px 1px white;
+}
+
+.info {
+    display: flex;
+    padding: 40px 10px;
+}
+.info .poster-wrapper {
+    width: 25%;
+    padding: 20px;
+    text-align: right;
+}
+.info .poster-wrapper img {
+    width: 80%;
+}
+.info .about-wrapper {
+    width: 40%;
+    padding-left: 20px;
+    color: white;
+}
+.info .about-wrapper ul {
+    padding: 0;
+    list-style: none;
+}
+.info .about-wrapper li span {
+    color: rgb(167, 167, 167);
+}
+.info .about-wrapper p:first-of-type {
+    padding-top: 15px;
+}
+.info .about-wrapper hr {
+    height: 1px;
+    background-color: rgb(167, 167, 167);
+}
+
+
+@media screen and (max-width: 1200px) {
+    #player {
+        height: 40vh;
+    }
+    #play-background {
+        height: 40vh;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .info .poster-wrapper img {
+        width: 85%;
+    }
+    .info .about-wrapper {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .info .poster-wrapper img {
+        width: 100%;
+    }
+    .info .about-wrapper {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .info .poster-wrapper {
+        width: 30%;
+        padding-top: 25px;
+        padding-right: 10px;
+    }
+    .info .about-wrapper {
+        width: 70%;
+        padding-right: 10px;
+    }
+    .info .about-wrapper p, hr {
+        position: relative;
+        top: -20px;
+        left: -50%;
+        width: 140%;
+    }
+}

@@ -1,0 +1,132 @@
+.hall {
+    position: relative;
+} 
+.hall .hall-size {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.hall .hall-size button {
+    display: block;
+    height: 30px;
+    width: 30px;
+    margin: 2px;
+    padding: 6px;
+    font-size: 14px;
+    background-color: #fff;
+    border: 1px solid #000;
+    outline: none;
+}
+.hall #plan {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 40px 30px;
+    background-color: #ddd;
+    border: black 1px solid;
+    box-shadow: 0px 0px 20px 2px #000 inset;
+    font-weight: bold;
+}
+.screen {
+    width: 100%;
+    height: 40px;
+    margin: 40px 20px 30px;
+    border-top: #444 5px solid;
+    border-radius: 5px;
+    text-align: center;
+}
+.row {
+    color: black;
+    display: flex;
+    flex-direction: row;
+}
+.row .row-number {
+    margin-top: 16px;
+}
+
+.hall .size-1 .seat {
+    height: 16px;
+    width: 16px;
+    margin: 6px 3px;
+}
+.hall .size-1 .row-number {
+    margin-top: 4px;
+    font-size: 0.9em;
+}
+.hall .size-2 .seat {
+    height: 22px;
+    width: 22px;
+    margin: 8px 3px;
+}
+.hall .size-2 .row-number {
+    margin-top: 9px;
+    font-size: 0.9em;
+}
+.hall .size-3 .seat {
+    height: 28px;
+    width: 28px;
+    margin: 8px 3px;
+}
+.hall .size-3 .row-number {
+    margin-top: 11px;
+}
+.hall .size-4 .seat {
+    height: 34px;
+    width: 34px;
+    margin: 10px 4px;
+}
+.hall .size-5 .seat {
+    height: 40px;
+    width: 40px;
+    margin: 12px 5px;
+}
+.hall .size-5 .row-number {
+    margin-top: 20px;
+}
+.seat {
+    border-radius: 4px;
+    border: 1px solid #1F7500;
+    background-color: #22CC00;
+    text-align: center;
+    cursor: pointer;
+}
+.seat:hover {
+    background-color: #FFA500;
+    border-color: #000;
+}
+.premium {
+    border-width: 2px 2px;
+    background-color: #2B9703;
+}
+.sold {
+    background-color: #5c5c5c;
+    border-color: #3d3d3d;
+    cursor: default;
+}
+.seat.sold:hover {
+    background-color: #5c5c5c;
+    border-color: #3d3d3d;
+}
+
+@media (max-width: 1200px) {
+    .seat:hover {
+        border-color: #1F7500;
+        background-color: #22CC00;
+    }
+    .seat.premium:hover {
+        border-color: #1F7500;
+        background-color: #2B9703;
+    }
+}
+
+@media (max-width: 600px) {
+    .hall #plan {
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    .screen {
+        width: 100%;
+    }
+}

@@ -1,0 +1,131 @@
+#noop {
+    width: 100%;
+    height: 61px;
+    background-color: #000;
+}
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: #000;
+    overflow: hidden;
+    z-index: 1000;
+    transition: 0.3s;
+}
+.navbar span {
+    color: #FF6D12;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 24px;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+.navbar ul:last-of-type {
+    float: right;
+}
+
+.navbar li, .navbar span {
+    float: left;
+    display: block;
+    padding: 16px;
+    margin: 0px 10px;
+}
+.navbar a {
+    color: #fafafa;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+}
+.navbar li, .navbar a {
+    transition: 0.2s;
+}
+
+.navbar li:hover {
+    background-color: #ddd;
+}
+.navbar li:hover a {
+    color: #000;
+    text-decoration: underline;
+}
+.navbar .i {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    top: 14px;
+    right: 20px;
+    display: none;
+}
+.navbar .i div {
+    width: 6px;
+    height: 6px;
+    margin: 4px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+@media screen and (min-width: 900px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .navbar li {display: none;}
+    .navbar .i {
+        display: block;
+    }
+}
+  
+@media screen and (max-width: 900px) {
+    .navbar.responsive {
+        top: 0px;
+        width: 100%;
+        padding-bottom: 10px;
+        z-index: 1000;
+    }
+    .navbar.responsive .i div {
+        width: 34px;
+        height: 4px;
+        border-radius: 4px;
+    }
+    .navbar.responsive .i div:nth-child(1) {
+        transform: rotate(45deg);
+        position: relative;
+        top: 11px;
+        left: 14px;
+    }
+    .navbar.responsive .i div:nth-child(2) {
+        transform: rotate(-45deg);
+        position: relative;
+        top: 3px;
+        left: 14px;
+    }
+    .navbar.responsive .i div:last-child {
+        display: none;
+    }
+    .navbar.responsive li {
+      float: none;
+      display: block;
+      text-align: center;
+      padding-top: 14px;
+    }
+    .navbar.responsive .navbar-wrapper {
+      margin-top: 52px;
+    }
+    .navbar.responsive ul {
+      float: none;
+    }
+    .navbar.responsive span{
+        display: none;
+    }
+}
