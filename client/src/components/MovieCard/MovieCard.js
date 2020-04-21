@@ -8,7 +8,7 @@ export const MovieCard = ({ genres, production, stars, address }) => {
     return (
         <div className="card">
             <div className="img-wrapper">
-                <img src={`http://${hostname}/api/movies/poster/${address}`} alt="poster"/>
+                <img src={`https://${hostname}/api/movies/poster/${address}`} alt="poster"/>
             </div>
             <div className="about">
                 <div className="wave"></div>

@@ -74,7 +74,7 @@ export const MoviePage = () => {
                         <div className="info">
                             <div className="poster-wrapper">
                                 <img 
-                                    src={`http://${hostname}/api/movies/poster/${movie._id}`} 
+                                    src={`https://${hostname}/api/movies/poster/${movie._id}`} 
                                     alt="poster" 
                                 />
                             </div>

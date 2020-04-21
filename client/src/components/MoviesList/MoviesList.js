@@ -136,7 +136,7 @@ export const MoviesList = ({ movies }) => {
                         <div key={movie._id} className="movie">
                             <div className="poster-wrapper">
                                 <img 
-                                    src={`http://${hostname}/api/movies/poster/${movie._id}`} 
+                                    src={`https://${hostname}/api/movies/poster/${movie._id}`} 
                                     alt="poster" 
                                 />
                             </div>
