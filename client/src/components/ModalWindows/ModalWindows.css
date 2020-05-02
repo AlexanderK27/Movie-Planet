@@ -83,6 +83,7 @@
     border: 2px solid #E0E0E0;
     border-radius: 8px;
     background: linear-gradient(145deg, #F7F7F7 0%, #B5B5B5 100%);
+    cursor: pointer;
 }
 .modal-window .second-step .payment-methods .active {
     border-color: #4169e1;

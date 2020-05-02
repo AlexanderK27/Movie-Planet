@@ -5,7 +5,7 @@ export const Ticket = ({ params }) => {
     const { id, movieName, date, sesDate, row, seat, seatType, price, purchaseDate, qrcodeHandler } = params
     
     let ticketClass = "Ticket"
-    if (sesDate < Date.now() + 240*60*1000) {
+    if (sesDate < Date.now() - 60*60*1000) {
         ticketClass = "Ticket expired"
     }
 

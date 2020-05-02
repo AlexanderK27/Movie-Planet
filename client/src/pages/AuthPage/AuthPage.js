@@ -20,7 +20,7 @@ export const AuthPage = () => {
     const [signInForm, setSignInForm] = useState({
         emailIn: '', passwordIn: ''
     })
-    
+
     // Handle response with errors from server
     const [signInError, setSignInError] = useState('')
     const [signUpError, setSignUpError] = useState('')
@@ -256,7 +256,7 @@ export const AuthPage = () => {
             if ( noUserName || noEmail || noPassword || noRepPassword ) {
                 return console.log('You shall not pass!')
             }
-            console.log(form)
+
             try {
                 const data = await request('/api/auth/registration', 'POST', {...form})
                 auth.login(data.token, data.userId, data.tokenStart)
@@ -266,7 +266,7 @@ export const AuthPage = () => {
 
     const loginHandler = async () => {
         if (signInForm.emailIn.trim() !== '' && signInForm.passwordIn.trim() !== '') {
-            console.log(signInForm)
+
             try {
                 const data = await request('/api/auth/login', 'POST', {
                     email: signInForm.emailIn,

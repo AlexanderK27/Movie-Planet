@@ -19,6 +19,8 @@ export const MainPage = () => {
         getMovies()
     }, [getMovies])    
 
+    document.title = 'Movie Planet'
+
     if (loading) {
         return <Loader />
     }

@@ -15,6 +15,7 @@
     color: #FF6D12;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 24px;
+    cursor: default;
 }
 
 .navbar ul {
