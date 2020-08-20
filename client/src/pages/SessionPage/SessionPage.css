@@ -1,107 +1,107 @@
 .session-page {
-    display: flex;
-    flex-wrap: wrap;
-    min-height: 100vh;
-    padding: 20px 0 40px;
-    background-color: #0F0F0F;
-    overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
+	min-height: 100vh;
+	padding: 20px 0 40px;
+	background-color: #0f0f0f;
+	overflow: hidden;
 }
 .session-page .movie-data {
-    width: 100%;
-    margin-bottom: 10px;
-    text-align: center;
-    color: #fff;
+	width: 100%;
+	margin-bottom: 10px;
+	text-align: center;
+	color: #fff;
 }
 .session-page .purchase-data {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    top: 194px;
-    width: 20%;
-    min-height: 200px;
-    max-height: 60vh;
-    margin-left: 3%;
-    padding: 10px 14px 20px;
-    color: #fff;
-    background-color: transparent;
-    border-radius: 8px;
-    overflow: auto;
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	top: 194px;
+	width: 20%;
+	min-height: 200px;
+	max-height: 60vh;
+	margin-left: 3%;
+	padding: 10px 14px 20px;
+	color: #fff;
+	background-color: transparent;
+	border-radius: 8px;
+	overflow: auto;
 }
-.session-page .purchase-data>div .neon {
-    height: 2px;
-    width: 100%;
-    margin-bottom: 12px;
-    background-color: #FF6D12;
-    border-radius: 2px;
-    box-shadow: 0px 0px 3px 0px #FF6D12;
+.session-page .purchase-data > div .neon {
+	height: 2px;
+	width: 100%;
+	margin-bottom: 12px;
+	background-color: #ff6d12;
+	border-radius: 2px;
+	box-shadow: 0px 0px 3px 0px #ff6d12;
 }
-.session-page .purchase-data>div:first-of-type p:first-of-type {
-    margin: 0 0 10px;
-    text-align: center;
-    font-size: 1.1em;
+.session-page .purchase-data > div:first-of-type p:first-of-type {
+	margin: 0 0 10px;
+	text-align: center;
+	font-size: 1.1em;
 }
-.session-page .purchase-data>div:first-of-type .ticket {
-    display: flex;
-    justify-content: space-between;
+.session-page .purchase-data > div:first-of-type .ticket {
+	display: flex;
+	justify-content: space-between;
 }
-.session-page .purchase-data>div:last-of-type {
-    margin-top: 18px;
-    display: flex;
-    justify-content: space-between;
+.session-page .purchase-data > div:last-of-type {
+	margin-top: 18px;
+	display: flex;
+	justify-content: space-between;
 }
-.session-page .purchase-data>div:last-of-type p {
-    margin: 8px 0 0;
+.session-page .purchase-data > div:last-of-type p {
+	margin: 8px 0 0;
 }
-.session-page .purchase-data>div:last-of-type button {
-    height: 38px;
-    width: 80px;
-    color: #fff;
-    text-transform: uppercase;
-    border: 2px solid #fff;
-    border-radius: 4px;
-    background-color: transparent;
-    outline: none;
-    transition: 0.3s;
+.session-page .purchase-data > div:last-of-type button {
+	height: 38px;
+	width: 80px;
+	color: #fff;
+	text-transform: uppercase;
+	border: 2px solid #fff;
+	border-radius: 4px;
+	background-color: transparent;
+	outline: none;
+	transition: 0.3s;
 }
-.session-page .purchase-data>div:last-of-type button:hover {
-    border-color: #FF6D12;
-    color: #FF6D12;
-    cursor: pointer;
+.session-page .purchase-data > div:last-of-type button:hover {
+	border-color: #ff6d12;
+	color: #ff6d12;
+	cursor: pointer;
 }
-.session-page .purchase-data>div:last-of-type button:disabled:hover {
-    border-color: #E60000;
-    color: #E60000;
-    cursor: not-allowed;
+.session-page .purchase-data > div:last-of-type button:disabled:hover {
+	border-color: #e60000;
+	color: #e60000;
+	cursor: not-allowed;
 }
 .session-page .purchase-data .warning-message {
-    text-align: center;
-    color: #E60000;
+	text-align: center;
+	color: #e60000;
 }
 .session-page .hallplan-wrapper {
-    display: flex;
-    justify-content: left;
-    overflow: auto;
-    margin: 0 5% 40px 30%;
-    height: fit-content;
+	display: flex;
+	justify-content: left;
+	overflow: auto;
+	margin: 0 5% 40px 30%;
+	height: fit-content;
 }
 
 @media screen and (max-width: 1200px) {
-    .session-page {
-        justify-content: center;
-    }
-    .session-page .movie-data {
-        order: 1;
-    }
-    .session-page .hallplan-wrapper {
-        margin-left: 5%;
-        order: 2;
-    }
-    .session-page .purchase-data {
-        position: relative;
-        top: 0;
-        order: 3;
-        width: 70%;
-        margin: 0 15% 20px;
-    }
+	.session-page {
+		justify-content: center;
+	}
+	.session-page .movie-data {
+		order: 1;
+	}
+	.session-page .hallplan-wrapper {
+		margin-left: 5%;
+		order: 2;
+	}
+	.session-page .purchase-data {
+		position: relative;
+		top: 0;
+		order: 3;
+		width: 70%;
+		margin: 0 15% 20px;
+	}
 }

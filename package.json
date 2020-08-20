@@ -1,30 +1,27 @@
 {
-  "name": "movie-planet",
-  "version": "1.0.0",
-  "description": "Website of the cinema from San Francisco",
-  "main": "app.js",
-  "scripts": {
-    "start": "node app.js",
-    "server": "env-cmd -f ./config/dev.env nodemon app.js",
-    "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
-  },
-  "author": "Oleksandr Kolomiichuk <alexkolom27@gmail.com>",
-  "license": "ISC",
-  "dependencies": {
-    "@sendgrid/mail": "^7.0.1",
-    "bcryptjs": "^2.4.3",
-    "config": "^3.3.1",
-    "express": "^4.17.1",
-    "express-validator": "^6.4.0",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.9.6",
-    "multer": "^1.4.2",
-    "pdfmake": "^0.1.65"
-  },
-  "devDependencies": {
-    "concurrently": "^5.1.0",
-    "env-cmd": "^10.1.0",
-    "nodemon": "^2.0.2"
-  }
+	"name": "movie-planet",
+	"version": "1.0.1",
+	"description": "Website of the cinema from San Francisco",
+	"main": "app.js",
+	"scripts": {
+		"start": "node app.js",
+		"server": "env-cmd -f ./config/dev.env nodemon app.js",
+		"client": "npm run start --prefix client"
+	},
+	"author": "Oleksandr Kolomiichuk <o.kolomiichuk@outlook.com>",
+	"license": "ISC",
+	"dependencies": {
+		"@sendgrid/mail": "^7.0.1",
+		"bcryptjs": "^2.4.3",
+		"express": "^4.17.1",
+		"express-validator": "^6.4.0",
+		"jsonwebtoken": "^8.5.1",
+		"mongoose": "^5.9.6",
+		"multer": "^1.4.2",
+		"pdfmake": "^0.1.65"
+	},
+	"devDependencies": {
+		"env-cmd": "^10.1.0",
+		"nodemon": "^2.0.2"
+	}
 }

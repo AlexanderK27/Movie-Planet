@@ -1,75 +1,75 @@
 .auth-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background-color: #0f0f0f;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+	background-color: #0f0f0f;
 }
 .auth-block {
-    width: 480px;
-    margin: 40px 0 50px;
+	width: 480px;
+	margin: 40px 0 50px;
 }
-.auth-block>p {
-    margin-bottom: 30px;
-    text-align: center;
-    font-size: 1.1em;
-    color: #fff;
+.auth-block > p {
+	margin-bottom: 30px;
+	text-align: center;
+	font-size: 1.1em;
+	color: #fff;
 }
 .auth-block .error-message {
-    margin: 0;
-    font-size: 1em;
-    color: #bb0000;
+	margin: 0;
+	font-size: 1em;
+	color: #bb0000;
 }
 .auth-buttons {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
 }
 .auth-buttons p {
-    padding-left: 4px;
-    color: #fff;
-    font-size: 0.9em;
+	padding-left: 4px;
+	color: #fff;
+	font-size: 0.9em;
 }
 .auth-buttons a {
-    color: #999;
-    text-decoration: none;
+	color: #999;
+	text-decoration: none;
 }
 .auth-buttons a:hover {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 .auth-buttons button {
 	padding: 0 12px;
 	font-size: 1em;
-    color: #fff;
-    background-color: transparent;
-    border: none;
+	color: #fff;
+	background-color: transparent;
+	border: none;
 	border-bottom: 3px solid #fff;
 	transition: 0.3s;
 	outline: none;
 	cursor: pointer;
 }
 .auth-buttons button:hover {
-    color: #FF6D12;
-    border-bottom-color: #FF6D12;
+	color: #ff6d12;
+	border-bottom-color: #ff6d12;
 }
 .auth-buttons button:disabled {
-    color: #ccc;
-    border-color: #ccc;
-    cursor: not-allowed;
+	color: #ccc;
+	border-color: #ccc;
+	cursor: not-allowed;
 }
 .auth-buttons button:disabled:hover {
-    color: #a70000;
-    border-color: #a70000;
+	color: #a70000;
+	border-color: #a70000;
 }
 
 @media (max-width: 550px) {
-    .auth-block {
-        width: 90%;
-    }
+	.auth-block {
+		width: 90%;
+	}
 }
 @media (max-width: 450px) {
-    .auth-buttons p {
-        font-size: 0.8em;
-    }
+	.auth-buttons p {
+		font-size: 0.8em;
+	}
 }
