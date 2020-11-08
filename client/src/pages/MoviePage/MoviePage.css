@@ -1,6 +1,6 @@
 .movie-page {
 	background: #0f0f0f;
-	min-height: 100vh;
+	/* min-height: 100vh; */
 }
 #player {
 	width: 100%;
@@ -35,9 +35,11 @@
 }
 .info .poster-wrapper img {
 	width: 80%;
+	max-width: 300px;
 }
 .info .about-wrapper {
 	width: 40%;
+	max-width: 700px;
 	padding-left: 20px;
 	color: white;
 }
