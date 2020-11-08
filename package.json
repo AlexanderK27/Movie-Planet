@@ -6,7 +6,8 @@
 	"scripts": {
 		"start": "node app.js",
 		"server": "env-cmd -f ./config/dev.env nodemon app.js",
-		"client": "npm run start --prefix client"
+		"client": "npm run start --prefix client",
+		"heroku-postbuild": "cd client && npm install && npm run build"
 	},
 	"author": "Oleksandr Kolomiichuk <o.kolomiichuk@outlook.com>",
 	"license": "ISC",
