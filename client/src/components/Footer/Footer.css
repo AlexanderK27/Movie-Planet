@@ -1,19 +1,18 @@
 footer {
-    flex-shrink: 0;
-    text-align: center;
-    color: #bbb;
-    background-color: #0A0A0A;
+	flex-shrink: 0;
+	text-align: center;
+	color: #bbb;
+	background-color: #0a0a0a;
 }
 footer div {
-    padding: 25px 25px 0;
+	padding: 25px 25px 0;
 }
 footer div p {
-    margin: 16px;
+	margin: 16px;
 }
-footer>p {
-    margin: 50px 0 5px 0;
-    text-align: center;
-    font-size: 0.9em;
-    font-style: italic;
-    color: #888;
+footer > p {
+	margin: 50px 0 5px 0;
+	text-align: center;
+	font-size: 0.9em;
+	color: #888;
 }
